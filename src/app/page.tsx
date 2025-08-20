@@ -18,6 +18,10 @@ export default function Home() {
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             A modern SaaS platform built with Next.js 15, Supabase, and Vercel
+            <br />
+            <span className="text-sm text-green-600">
+              ✅ CI/CD Pipeline Active
+            </span>
           </p>
         </div>
 
