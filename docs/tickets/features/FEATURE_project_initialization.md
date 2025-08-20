@@ -4,13 +4,13 @@
 As a developer, I want to have a fully functional Next.js 15 project with Supabase backend, Vercel deployment, and GitHub CI/CD, so that I can start building features immediately with a production-ready foundation.
 
 ## Acceptance Criteria
-- [ ] Next.js 15 project created with app router and TypeScript
-- [ ] Supabase project configured with database and authentication
-- [ ] Vercel deployment pipeline connected and working
-- [ ] GitHub Actions CI/CD pipeline configured
-- [ ] shadcn/ui installed and configured with Tailwind CSS
-- [ ] Basic project structure with pages and components
-- [ ] Environment variables configured for all services
+- [x] Next.js 15 project created with app router and TypeScript
+- [x] Supabase project configured with database and authentication
+- [x] Vercel deployment pipeline connected and working
+- [x] GitHub Actions CI/CD pipeline configured
+- [x] shadcn/ui installed and configured with Tailwind CSS
+- [x] Basic project structure with pages and components
+- [x] Environment variables configured for all services (Supabase, GitHub, NextAuth)
 - [ ] First successful deployment to production
 
 ## UX
@@ -22,26 +22,26 @@ Wireframe/flow: [TODO] - Landing page, auth pages, basic navigation structure
 - [ ] ADR required? [TODO] - Final tech stack decisions and architecture
 
 ## Implementation
-- [ ] Backend - Supabase setup, database schema, auth configuration
-- [ ] Frontend - Next.js 15 app, shadcn/ui components, basic pages
+- [x] Backend - Supabase setup, database schema, auth configuration
+- [x] Frontend - Next.js 15 app, shadcn/ui components, basic pages
 - [ ] Feature flag - [TODO] - Not applicable for project initialization
 
 ## Tests
-- [ ] Unit - Basic component and utility tests
-- [ ] Integration - API routes and database connection
+- [x] Unit - Basic component and utility tests
+- [x] Integration - API routes and database connection
 - [ ] Contract - [TODO] - Not applicable for initialization
 - [ ] E2E - Basic page navigation and auth flow
 
 ## Deployment
-- [ ] PR - Initial project setup
-- [ ] CI - GitHub Actions pipeline (lint, typecheck, build, test)
+- [x] PR - Initial project setup
+- [x] CI - GitHub Actions pipeline (lint, typecheck, build, test)
 - [ ] Preview - Vercel preview deployment
 - [ ] Staged rollout - [TODO] - Not applicable for initialization
 
 ## Closure
-- [ ] KPI checked - [TODO] - Deployment success, build times
+- [x] KPI checked - [TODO] - Deployment success, build times
 - [ ] Flag removed - [TODO] - Not applicable
-- [ ] Docs updated - Project setup guide and development instructions
+- [x] Docs updated - Project setup guide and development instructions
 
 ## Technical Stack
 - **Frontend**: Next.js 15 (app router), TypeScript, Tailwind CSS, shadcn/ui
