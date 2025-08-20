@@ -102,6 +102,10 @@ newstream/
 3. Add environment variables in Vercel dashboard
 4. Deploy automatically on push to main branch
 
+**Current Status**: ✅ Deployed and configured
+- Production: https://newstream-omega.vercel.app
+- CI/CD: GitHub Actions with Vercel deployment
+
 ### Manual Deployment
 
 ```bash
