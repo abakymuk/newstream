@@ -56,14 +56,14 @@ export async function PUT(request: NextRequest) {
       .select()
       .single()
 
-    if (error) {
+    if (updateError) {
       return NextResponse.json({ error: 'Failed to update profile' }, { status: 400 })
     }
 
     return NextResponse.json(profile)
   } catch (error) {
     if (error instanceof z.ZodError) {
-      return NextResponse.json({ error: 'Invalid data', details: error.errors }, { status: 400 })
+      return NextResponse.json({ error: 'Invalid data', details: error.issues }, { status: 400 })
     }
     return NextResponse.json({ error: 'Internal server error' }, { status: 500 })
   }

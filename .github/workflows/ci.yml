@@ -31,6 +31,17 @@ jobs:
     - name: Run tests
       run: npm run test
 
+    - name: Security audit
+      run: npm audit --audit-level high
+
+    - name: Install Playwright browsers
+      run: npx playwright install --with-deps
+
+    - name: Run E2E tests
+      run: npx playwright test
+      env:
+        CI: true
+
     - name: Build application
       run: npm run build
 

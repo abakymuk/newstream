@@ -9,6 +9,7 @@ import {
 import { createClient } from "@/lib/supabase-server";
 import { redirect } from "next/navigation";
 import Link from "next/link";
+import { FeatureFlag } from "@/components/FeatureFlag";
 
 export default async function DashboardPage() {
   const supabase = await createClient();
@@ -60,20 +61,22 @@ export default async function DashboardPage() {
             </CardContent>
           </Card>
 
-          <Card>
-            <CardHeader>
-              <CardTitle>⚙️ Settings</CardTitle>
-              <CardDescription>Manage your account</CardDescription>
-            </CardHeader>
-            <CardContent>
-              <p className="text-sm text-gray-600 mb-4">
-                Update your profile and preferences
-              </p>
-              <Button variant="outline" size="sm" asChild>
-                <Link href="/profile">Open Settings</Link>
-              </Button>
-            </CardContent>
-          </Card>
+          <FeatureFlag flag="USER_PROFILE">
+            <Card>
+              <CardHeader>
+                <CardTitle>⚙️ Settings</CardTitle>
+                <CardDescription>Manage your account</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <p className="text-sm text-gray-600 mb-4">
+                  Update your profile and preferences
+                </p>
+                <Button variant="outline" size="sm" asChild>
+                  <Link href="/profile">Open Settings</Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </FeatureFlag>
         </div>
 
         <div className="mt-8">
