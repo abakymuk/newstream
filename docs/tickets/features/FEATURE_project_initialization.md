@@ -1,0 +1,76 @@
+# Feature: Project Initialization
+
+## Story
+As a developer, I want to have a fully functional Next.js 15 project with Supabase backend, Vercel deployment, and GitHub CI/CD, so that I can start building features immediately with a production-ready foundation.
+
+## Acceptance Criteria
+- [ ] Next.js 15 project created with app router and TypeScript
+- [ ] Supabase project configured with database and authentication
+- [ ] Vercel deployment pipeline connected and working
+- [ ] GitHub Actions CI/CD pipeline configured
+- [ ] shadcn/ui installed and configured with Tailwind CSS
+- [ ] Basic project structure with pages and components
+- [ ] Environment variables configured for all services
+- [ ] First successful deployment to production
+
+## UX
+Wireframe/flow: [TODO] - Landing page, auth pages, basic navigation structure
+
+## Design & Contract
+- [ ] Project structure documentation (Next.js 15 app router)
+- [ ] Environment variables schema (.env.example)
+- [ ] ADR required? [TODO] - Final tech stack decisions and architecture
+
+## Implementation
+- [ ] Backend - Supabase setup, database schema, auth configuration
+- [ ] Frontend - Next.js 15 app, shadcn/ui components, basic pages
+- [ ] Feature flag - [TODO] - Not applicable for project initialization
+
+## Tests
+- [ ] Unit - Basic component and utility tests
+- [ ] Integration - API routes and database connection
+- [ ] Contract - [TODO] - Not applicable for initialization
+- [ ] E2E - Basic page navigation and auth flow
+
+## Deployment
+- [ ] PR - Initial project setup
+- [ ] CI - GitHub Actions pipeline (lint, typecheck, build, test)
+- [ ] Preview - Vercel preview deployment
+- [ ] Staged rollout - [TODO] - Not applicable for initialization
+
+## Closure
+- [ ] KPI checked - [TODO] - Deployment success, build times
+- [ ] Flag removed - [TODO] - Not applicable
+- [ ] Docs updated - Project setup guide and development instructions
+
+## Technical Stack
+- **Frontend**: Next.js 15 (app router), TypeScript, Tailwind CSS, shadcn/ui
+- **Backend**: Supabase (database, auth, realtime)
+- **Deployment**: Vercel (hosting, preview deployments)
+- **CI/CD**: GitHub Actions (lint, typecheck, test, build)
+- **Tools**: ESLint, Prettier, Husky (git hooks)
+
+## Project Structure
+```
+newstream/
+├── app/                    # Next.js 15 app router
+│   ├── (auth)/            # Auth pages group
+│   ├── api/               # API routes
+│   ├── globals.css        # Global styles
+│   └── layout.tsx         # Root layout
+├── components/            # shadcn/ui components
+├── lib/                   # Utilities and configs
+├── prisma/               # Database schema (if using Prisma)
+├── public/               # Static assets
+├── .env.example          # Environment variables template
+├── .github/              # GitHub Actions workflows
+├── package.json          # Dependencies and scripts
+└── README.md             # Project documentation
+```
+
+## Environment Variables
+- `NEXT_PUBLIC_SUPABASE_URL` - Supabase project URL
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY` - Supabase anonymous key
+- `SUPABASE_SERVICE_ROLE_KEY` - Supabase service role key
+- `VERCEL_URL` - Vercel deployment URL
+- `GITHUB_TOKEN` - GitHub Actions token
