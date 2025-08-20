@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/card";
 import { createClient } from "@/lib/supabase-server";
 import { redirect } from "next/navigation";
+import Link from "next/link";
 
 export default async function DashboardPage() {
   const supabase = await createClient();
@@ -68,8 +69,8 @@ export default async function DashboardPage() {
               <p className="text-sm text-gray-600 mb-4">
                 Update your profile and preferences
               </p>
-              <Button variant="outline" size="sm">
-                Open Settings
+              <Button variant="outline" size="sm" asChild>
+                <Link href="/profile">Open Settings</Link>
               </Button>
             </CardContent>
           </Card>

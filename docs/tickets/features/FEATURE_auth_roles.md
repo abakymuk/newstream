@@ -4,26 +4,26 @@
 As a user, I want to securely sign up, sign in, and manage my account with proper role-based access, so that I can access the application safely with appropriate permissions.
 
 ## Acceptance Criteria
-- [ ] User registration with email/password
-- [ ] User login with email/password
-- [ ] Refresh token mechanism for session management
+- [x] User registration with email/password
+- [x] User login with email/password
+- [x] Refresh token mechanism for session management
 - [ ] Password reset functionality
-- [ ] Organization/workspace creation and management
-- [ ] Role-based access control (admin, member, viewer)
-- [ ] Row Level Security (RLS) in database
-- [ ] User profile management
+- [x] Organization/workspace creation and management
+- [x] Role-based access control (admin, member, viewer)
+- [x] Row Level Security (RLS) in database
+- [x] User profile management
 
 ## UX
 Wireframe/flow: [TODO] - Auth screens (login, register, profile, org management)
 
 ## Design & Contract
-- [ ] DB migrations for users, organizations, roles, permissions (Supabase)
-- [ ] API contract (Zod/OpenAPI) for auth endpoints (Next.js API routes)
+- [x] DB migrations for users, organizations, roles, permissions (Supabase)
+- [x] API contract (Zod/OpenAPI) for auth endpoints (Next.js API routes)
 - [ ] ADR required? [TODO] - Auth provider and security decisions
 
 ## Implementation
-- [ ] Backend - Supabase Auth, Next.js API routes, RLS policies
-- [ ] Frontend - Next.js auth pages, middleware, role-based UI
+- [x] Backend - Supabase Auth, Next.js API routes, RLS policies
+- [x] Frontend - Next.js auth pages, middleware, role-based UI
 - [ ] Feature flag - [TODO] - Determine if auth needs feature flags
 
 ## Tests
