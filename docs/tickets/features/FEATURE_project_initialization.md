@@ -11,7 +11,7 @@ As a developer, I want to have a fully functional Next.js 15 project with Supaba
 - [x] shadcn/ui installed and configured with Tailwind CSS
 - [x] Basic project structure with pages and components
 - [x] Environment variables configured for all services (Supabase, GitHub, NextAuth)
-- [ ] First successful deployment to production
+- [x] First successful deployment to production
 
 ## UX
 Wireframe/flow: [TODO] - Landing page, auth pages, basic navigation structure
@@ -35,7 +35,7 @@ Wireframe/flow: [TODO] - Landing page, auth pages, basic navigation structure
 ## Deployment
 - [x] PR - Initial project setup
 - [x] CI - GitHub Actions pipeline (lint, typecheck, build, test)
-- [ ] Preview - Vercel preview deployment
+- [x] Preview - Vercel preview deployment
 - [ ] Staged rollout - [TODO] - Not applicable for initialization
 
 ## Closure
@@ -69,8 +69,13 @@ newstream/
 ```
 
 ## Environment Variables
-- `NEXT_PUBLIC_SUPABASE_URL` - Supabase project URL
-- `NEXT_PUBLIC_SUPABASE_ANON_KEY` - Supabase anonymous key
-- `SUPABASE_SERVICE_ROLE_KEY` - Supabase service role key
-- `VERCEL_URL` - Vercel deployment URL
-- `GITHUB_TOKEN` - GitHub Actions token
+- `NEXT_PUBLIC_SUPABASE_URL` - Supabase project URL ✅
+- `NEXT_PUBLIC_SUPABASE_ANON_KEY` - Supabase anonymous key ✅
+- `SUPABASE_SERVICE_ROLE_KEY` - Supabase service role key ✅
+- `VERCEL_URL` - Vercel deployment URL ✅
+- `GITHUB_TOKEN` - GitHub Actions token ✅
+
+## Deployment URLs
+- **Production**: https://newstream-omega.vercel.app
+- **Preview**: https://newstream-e088n82zx-vlad-ovelians-projects.vercel.app
+- **Vercel Dashboard**: https://vercel.com/vlad-ovelians-projects/newstream
